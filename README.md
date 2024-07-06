@@ -8,3 +8,16 @@ spring ai ollama를 이용해서 qwen2 모델을 테스트 해 봅니다.
 * Spring Boot 3.3.1
 * Kotlin 1.9.24
 * Gradle 7.3.3
+
+## 테스트 방법
+
+httpie
+```
+http GET 'http://localhost:8080/ollama?name=홍길동'
+{"response":"안녕하세요, 홍길동님! 어떻게 도와드릴까요?"}
+```
+
+curl
+```
+curl 'http://localhost:8080/ollama?name=%ED%99%8D%EA%B8%B8%EB%8F%99'
+```
