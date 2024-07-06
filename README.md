@@ -9,8 +9,13 @@ spring ai ollama를 이용해서 qwen2 모델을 테스트 해 봅니다.
 * Kotlin 1.9.24
 * Gradle 7.3.3
 
-## 테스트 방법
+## 구동
+구동
+```
+./gradlew bootRun
+```
 
+## 테스트
 httpie
 ```
 http GET 'http://localhost:8080/ollama?name=홍길동'
